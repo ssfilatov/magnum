@@ -307,6 +307,12 @@ resources:
       group: ungrouped
       config: {get_file: fragments/enable-kube-scheduler.yaml}
 
+  enable_kube_dashboard:
+    type: OS::Heat::SoftwareConfig
+    properties:
+      group: ungrouped
+      config: {get_file: fragments/enable-kube-dashboard.yaml}
+
   wc_notify:
     type: OS::Heat::SoftwareConfig
     properties:
